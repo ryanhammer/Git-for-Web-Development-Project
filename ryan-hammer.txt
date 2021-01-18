@@ -1,0 +1,116 @@
+Link to completed Code Pen: https://codepen.io/Ryan35/pen/GRjzqrZ
+
+Questions and Answers
+
+1. What is Semantic HTML?
+    Semantic HTML elements give some piece of information about the part of the page they are being used for; <title> is used for the title of the page, etc.
+
+2. What is HTML used for?
+    HTML code comprises the "foundation" of web pages if one thinks of those pages in a house/building analogy. HTML describes the elements/types of content on a page and then CSS styles those different components.
+
+3. What is an attribute and where do we put it?
+    An attribute is something that provides additional information about an HTML element. Attributes appear in the opening tag of an element.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+    The h1 tag is used for the main heading on a page and should be used once for SEO reasons (among other things).
+
+5. Name two tags that have required attributes
+    The <img> and <a> tag have required attributes.
+
+6. What do we put in the head of our HTML document? 
+    A base navigation address, the title of the page, perhaps some CSS styling for the page if no file is attached.
+
+7. What is an id?
+    An id is a type of selector in CSS that can be used only once on a specific HTML element.
+
+8. What elements can I add an id to?
+    An id can be added to any element, but any id can only be used one time.
+
+9. How many times can I use the same id on a page?
+    One time.
+    
+10. What is a class?
+    A class is another type of CSS selector that can be used on more than one element.
+
+11. What elements can I add a class to? 
+    Any element can be given a class.
+
+12. How many times can I use the same class on a page? 
+    As many as you'd like.
+
+13. How do I get my link to open in a new tab?
+    After specifying the location using href, use the target attribute with a value of _blank.
+
+14. What is the alt attribute in the image tag used for? 
+    The alt attribute can be used to display a message in text if for some reason an image cannot be displayed.
+
+15. How do I reference an id?
+    In your CSS file it would be #id_name.
+
+16. What is the difference between a section and a div
+    A <section> tag is semantic and indicates a portion of the page that is grouped together. A <div> is structural/not semantic and does not offer any additional information about the HTML within.
+    
+17. What is CSS used for? 
+    CSS is used to style web pages by referencing different HTML elements.
+
+18. How to we select an element? Example - every h2 on the page
+    In the CSS file, it would be that element then an opening curly bracket; e.g. h2 {css style}
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    A class can be assigned to multiple tags/elements that you might want to apply the same style to; an ID can only be used once. For example, if you have multiple text sections on a page that you want to apply the same font styles to, a class would be appropriate. If you had a single section or element that you wanted to apply a background color to, an id would be appropriate.
+
+20. How do we select classes in CSS?
+    A period and then the class name: .class-name-here
+
+21. How do we select a p element with a single class of “human””?
+    .human {css styling}
+
+22. What is a parent child selector? When would this be useful?    
+    A parent-child selector is used to select a group of elements that are contained within a parent element. For example, if I wanted to select only the paragraph elements within a certain section, I would use a parent-child selector.
+
+23. How do you select all links within a div with the class of sidebar?
+    a.sidebar {css stylings}
+
+24. What is a pseudo selector?
+    Pseudo elements and classes are styles/effects than can be assigned at the end of a selector in CSS code using the ':' symbol. They are not properties, technically. For example, a:hover is a pseudo selector indicating what happens when a user hovers over the a element with their cursor.
+
+25. What do we use the change the spacing between lines?
+    Spacing between lines can be changed using the line-height property.
+
+26. What do we use to change the spacing between letters?
+    We use the letter-spacing CSS property to do that.
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    We use the text-transform property to select whichever of those options is preferred.
+
+28. How do I add a 1px border around my div that is dotted and black?
+    Assuming you have already selected the correct div, the CSS property code would be 
+    { border: 1px dotted black}
+
+29. How do I select everything on the page? 
+    You would want to use the * {} selector.
+
+30. How do I write a comment in CSS?
+    In CSS you use the format /* comment goes here */ to add comments.
+
+31. How do I find out what file I am in, when I am using the command line?
+    The command pwd prints the working directory.
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+    The command ls lists the files and folders in your current directory.
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    Use the rm command to remove a file. This is risky because once it has been removed it is totally gone. There is no recycle bin (or "no takesies backsies" as Pace so eloquently put it)
+
+34. Why should I use version control?
+    Version control offers two humongous benefits: first, it allows individual coders to catalog changes they make and, if they break something too badly, revert to a previous version and resume from there. Second it allows teams to collaborate and then merge their changes/additions to the code as smoothly as possible.
+
+35. How often should I commit to github?
+    It is good to commit whenever a change has been made to project/code file. Each commit gives a point in time to return to in the version control.
+
+36. What is the command we would use to push our repo up to github?
+    The command is git push origin -u branch_name_here
+
+37. Walk me through Lambda's git flow.
+    Lambda's git flow combines both forking and branching to help prepare us for what we are likely to encounter on the job. Whenever starting a project, we first fork the main branch into our Github. Then we clone off of that fork and add a branch from the main with our first and last name. Then we actually make whatever changes we need to do to complete the assignment. Then we commit the changes and push those back to Github, then we compare changes on our branch to main *forked* copy, and submit to our mentor/collaborator before submitting the assignment.
+    
